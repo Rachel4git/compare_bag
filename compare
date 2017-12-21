@@ -1,0 +1,16 @@
+# coding=utf-8
+
+import bag_db
+import os
+
+class BagDataOptimization:
+    def fsd_baggage_datas(self):
+        fsd_bag_data = bag_db.db_connect('10.100.157.78', 3500, 'TCFlyIntIe', 'ZnD7aJCFm9FvktrsY6RZ', 'TCFlyIntIe',
+                                            'SELECT * FROM TCFlyIntFare.fifc_fsd_bag')
+        #print (fsd_bag)
+
+        fsd_subbag_data = bag_db.db_connect('10.100.157.78', 3500, 'TCFlyIntIe', 'ZnD7aJCFm9FvktrsY6RZ', 'TCFlyIntIe'
+                                           )
+
+
+#if __name__ == '__main__':
