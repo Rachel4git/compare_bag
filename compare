@@ -1,6 +1,7 @@
 # coding=utf-8
 
 import bag_db
+import bag_json
 import os
 
 class BagDataOptimization:

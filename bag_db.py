@@ -3,8 +3,9 @@
 import MySQLdb
 import MySQLdb.cursors
 
+
 # connecting to MySQLdb
-def get_baggage(host,port,user,password,db,sql):
+def get_baggage(host,port,user,passwd,db,sql):
     #连接主表
     '''
     :param host: 
@@ -21,10 +22,9 @@ def get_baggage(host,port,user,password,db,sql):
             host = host,
             port = port,
             user = user,
-            password = password,
+            passwd = passwd,
             db = db,
-            cursorclass = MySQLdb.cursors.Dictcursor #设置SQL语句的返回形式为字典
-
+            cursorclass = MySQLdb.cursors.DictCursor
         )
         #获取cursor对象，用于SQL查询并返回结果
         cur = conn.cursor()
@@ -44,7 +44,7 @@ def get_baggage(host,port,user,password,db,sql):
         print "Mysqldb error %d,%s" % ( e.args[0],e.args[1])
 
 
-def get_subbag(host,port,user,password,db,sql,relation_id,condition):
+def get_subbag(host,port,user,passwd,db,sql,relation_id,conditon):
     #连接附表，通过ID获取相关数据
     try:
         #建立数据库连接
@@ -52,15 +52,15 @@ def get_subbag(host,port,user,password,db,sql,relation_id,condition):
             host = host,
             port = port,
             user = user,
-            password = password,
+            passwd = passwd,
             db = db,
-            cursorclass = MySQLdb.cursors.Dictcursor #设置SQL语句的返回形式为字典
+            cursorclass = MySQLdb.cursors.DictCursor #设置SQL语句的返回形式为字典
 
         )
         #获取cursor对象，用于SQL查询并返回结果
         cur = conn.cursor()
         #执行单条SQL语句，返回数据量
-        datas = cur.execute( 'SELECT * FROM TCFlyIntFare.fifc_fsd_subbag where /"relation_id /"= relation_id and condition = condition')
+        datas = cur.execute( sql, (relation_id,conditon))
         #print(datas)
         #抓取数据
         info = cur.fetchmany(datas)
@@ -79,9 +79,28 @@ def db2dict(info):
     # 将数据库中数据写入字典
     try:
         dict = {}
-        for data in info:
-            dict.setdefault(data['id'], data)
-            return dict
+        l = len(info)
+        for i in range(0, l):
+            k=info[i]['master_routing']+"-"+info[i]['cabinclass'] #唯一索引
+            v=info[i]
+            dict.setdefault(k, v)
+        return dict
     except Exception,E:
         print Exception,":",E
 
+
+
+
+if __name__ == '__main__':
+    # fsd_bag_data = get_baggage('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
+    #                                  'SELECT * FROM TCFlyIntFare.fifc_fsd_bag')
+    # #print(fsd_bag_data[0])
+    # a=fsd_bag_data[0]
+    # fsd_bag_dic=db2dict(fsd_bag_data)
+    # print(fsd_bag_dic)
+
+
+    fsd_bag_data = get_subbag('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
+                               'SELECT * FROM TCFlyIntFare.fifc_fsd_bag where "id"=%s ', 3619184,"")
+
+    print(fsd_bag_data)
