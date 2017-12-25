@@ -76,7 +76,7 @@ def proProcess(json_data):
     idb_S1_dict = {}
     #与数据源格式有关
     idb_S1_dict.setdefault('fillingairline', str(json_data['ticketCarrier']))
-    idb_S1_dict.setdefault('pax_type', "Adult")
+    idb_S1_dict.setdefault('pax_type', "ADT")
     idb_S1_dict.setdefault('create_time',  datetime.datetime.strptime(json_data['createDate'], '%Y-%m-%d %H:%M:%S') )
     idb_S1_dict.setdefault('source', str(json_data['engineType']))
     idb_S1_dict.setdefault('tracerid', str(json_data['traceId']))
@@ -177,7 +177,7 @@ def connect(L,orgiDestSeqID,segmentSeqID,departureCityCode,arrivalCityCode):
             arrCity = arrivalCityCode[1]
         else:
             if L==2:
-                if segmentSeqID[1]-orgiDestSeqID ==0:
+                if segmentSeqID[1]-orgiDestSeqID[1]==0:
                     connections = "S-S"
                     depCtiy = departureCityCode[0]
                     arrCity = arrivalCityCode[0]
@@ -187,7 +187,7 @@ def connect(L,orgiDestSeqID,segmentSeqID,departureCityCode,arrivalCityCode):
                     arrCity = arrivalCityCode[1]
             else:
                 if L ==3 :
-                    if segmentSeqID[1]-orgiDestSeqID ==0:
+                    if segmentSeqID[1]-orgiDestSeqID[1]==0:
                         connections="S-X-S"
                         depCtiy = departureCityCode[0]
                         arrCity = arrivalCityCode[0]

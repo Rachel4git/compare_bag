@@ -13,14 +13,15 @@ def  compare(data1,data2,errInfo):
             '''
             try:
                 if str(data1) != str(data2):
-                    # error_list.append(errInfo)
-                    # error_list.append('{} != {}'.format(data1, data2))
-                    # error_list.append('\n')
+                    error_list.append(errInfo)
+                    error_list.append('{} != {}'.format(data1, data2))
+                    error_list.append('\n')
                     return errInfo
                 else:
                     return 1111
             except Exception, e:
-                print Exception, ":", e
+                return e
+               # print Exception, ":", "grtytryhyghghgf"+errInfo
 
 
 # a = json_read(r'D:\MyConfiguration\hd48552\Desktop\S1-searchdetail (2).txt')
@@ -54,10 +55,10 @@ def checking(dict1,dict2):
             compare(dict1["fillingairline"], dict2["fillingairline"], "fillingairline错误")
             compare(dict1["aircodes"], dict2["aircodes"], "aircodes错误")
             compare(dict1["cabinclass"],dict2["cabinclass"],"cabinclass错误")
-            #compare(dict1["pax_Type"], dict2["pax_Type"],"pax_Type错误")
-            #compare(dict1["createTime"], dict2["createTime"],"createTime错误")
+            compare(dict1["pax_type"], dict2["pax_type"],"pax_Type错误")
+            compare(dict1["create_time"], dict2["create_time"],"createTime错误")
             compare(dict1["source"],dict2["source"],"source错误")
-            #compare(dict1["tracerId"], dict2["tracerId"],"tracerId错误")
+            rr=compare(dict1["tracerid"], dict2["tracerid"],"tracerId错误")
             G=compare(dict1["dep_city"], dict2["dep_city"], "dep_city错误")
             h=compare(dict1["arr_city"], dict2["arr_city"], "dep_city错误")
             compare(dict1["detail_link"], dict2["detail_link"],"detail_link错误")
@@ -73,17 +74,21 @@ if __name__ == '__main__':
     db_dict = bag_db.db2dict(db)
 
     # 读入文件
-    json = bag_json.json_read(r'D:\MyConfiguration\hd48552\Desktop\sss.txt')
+    json = bag_json.json_read(r'D:\MyConfiguration\hd48552\Desktop\sss1.txt')
     json_dict = bag_json.proProcess(json)
 
-    dict2 = json_dict
+    dict2 = json_dict #文件
     # a=json_dict["routing"] + "|" + json_dict["connections"] + "|" + json_dict["fillingairline"] + "|" + json_dict["cabinclass"]
     try:
-        dict1 = db_dict[json_dict["routing"] +"|"+ json_dict["connections"] + "|"+json_dict["fillingairline"] + "|"+json_dict["cabinclass"]]
-        f=checking(dict1, dict2)
-        print (f)
-    except Exception,E:
-        print Exception, ":", E
+     a=json_dict["routing"] + "|" + json_dict["connections"] + "|" + json_dict["fillingairline"] + "|" + json_dict[
+            "cabinclass"]
+     dict1 = db_dict[json_dict["routing"] +"|"+ json_dict["connections"] + "|"+json_dict["fillingairline"] + "|"+json_dict["cabinclass"]] #数据库
+     result=checking(dict1, dict2)
+     print ("ERROR LIST")
+     # for iin range(0,len(error_list)):
+     #    print (error_list[i])
+    except Exception,E:  #异常信息有时是因为key与数据库中的字段值不匹配
+         print Exception, ":", E#"111111111116666666666666666"
 
 
 
