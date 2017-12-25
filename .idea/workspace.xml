@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ce2f1975-4613-4b19-a9d2-ec04531b39f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bag_db.py" afterPath="$PROJECT_DIR$/bag_db.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bag_json.py" afterPath="$PROJECT_DIR$/bag_json.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compare.py" afterPath="$PROJECT_DIR$/compare.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,9 +15,10 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/$test20170810_main.coverage" NAME="test20170810_main Coverage Results" MODIFIED="1513946490613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../../已完成项目/ATPCO舱等解析/atpco解析舱等" />
     <SUITE FILE_PATH="coverage/$txt_S1Detail.coverage" NAME="txt_S1Detail Coverage Results" MODIFIED="1513911123506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$compare.coverage" NAME="compare Coverage Results" MODIFIED="1514194925276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$bag_db.coverage" NAME="bag_db Coverage Results" MODIFIED="1514189859527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$bag_json.coverage" NAME="bag_json Coverage Results" MODIFIED="1514193923108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$compare.coverage" NAME="compare Coverage Results" MODIFIED="1514202232390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$draft.coverage" NAME="draft Coverage Results" MODIFIED="1514197654941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$bag_db.coverage" NAME="bag_db Coverage Results" MODIFIED="1514202037908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$bag_json.coverage" NAME="bag_json Coverage Results" MODIFIED="1514199097999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -37,15 +36,17 @@
       <file leaf-file-name="test20170810_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../../已完成项目/ATPCO舱等解析/atpco解析舱等/test20170810_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="26" />
               <folding>
                 <element signature="e#125#505#0" expanded="false" />
-                <element signature="e#557#936#0" expanded="false" />
                 <element signature="e#975#1280#0" expanded="false" />
                 <element signature="e#1320#1406#0" expanded="false" />
                 <element signature="e#1448#1664#0" expanded="false" />
                 <element signature="e#1712#1861#0" expanded="false" />
+                <element signature="e#1908#2020#0" expanded="false" />
+                <element signature="e#2068#2151#0" expanded="false" />
+                <element signature="e#2197#2687#0" expanded="false" />
                 <marker date="1502357078401" expanded="true" signature="305:328" ph="SELECT * FRO... cabin_bak" />
               </folding>
             </state>
@@ -65,17 +66,16 @@
       <file leaf-file-name="bag_json.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bag_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-232">
-              <caret line="87" column="83" lean-forward="true" selection-start-line="87" selection-start-column="83" selection-end-line="87" selection-end-column="83" />
+            <state relative-caret-position="67">
+              <caret line="81" column="65" lean-forward="true" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="65" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
                 <element signature="e#117#312#0" expanded="false" />
                 <element signature="e#353#576#0" expanded="false" />
-                <element signature="e#3248#3521#0" expanded="false" />
-                <element signature="e#3564#3770#0" expanded="false" />
-                <element signature="e#4097#4328#0" expanded="false" />
-                <element signature="e#4553#5247#0" expanded="false" />
-                <element signature="e#5362#6509#0" expanded="false" />
+                <element signature="e#3246#3519#0" expanded="false" />
+                <element signature="e#3562#3768#0" expanded="false" />
+                <element signature="e#4095#4326#0" expanded="false" />
+                <element signature="e#4551#5245#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -84,13 +84,23 @@
       <file leaf-file-name="compare.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/compare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <state relative-caret-position="444">
+              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
                 <element signature="e#16#29#0" expanded="true" />
-                <marker date="1514194925261" expanded="true" signature="1201:1269" ph="SELECT * FRO... fifc_fsd_sub_baggage" />
-                <marker date="1514194925261" expanded="true" signature="2970:3013" ph="SELECT * FRO... fifc_fsd_baggage" />
+                <marker date="1514202232377" expanded="true" signature="1268:1336" ph="SELECT * FRO... fifc_fsd_sub_baggage" />
+                <marker date="1514202232377" expanded="true" signature="3123:3166" ph="SELECT * FRO... fifc_fsd_baggage" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="draft.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/draft.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,8 +108,8 @@
       <file leaf-file-name="bag_db.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bag_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="103" column="106" lean-forward="true" selection-start-line="102" selection-start-column="34" selection-end-line="103" selection-end-column="106" />
+            <state relative-caret-position="675">
+              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding>
                 <element signature="e#24#38#0" expanded="true" />
                 <marker date="1514189845772" expanded="true" signature="2266:2309" ph="SELECT * FRO... fifc_fsd_baggage" />
@@ -125,8 +135,8 @@
       <find>spli</find>
       <find>range</find>
       <find>cmp</find>
-      <find>time</find>
       <find>info</find>
+      <find>time</find>
       <find>infos</find>
     </findStrings>
   </component>
@@ -139,11 +149,11 @@
         <option value="$PROJECT_DIR$/BagDataOptimization_main" />
         <option value="$PROJECT_DIR$/../../../../已完成项目/ATPCO舱等解析/atpco解析舱等 新版/test20170810_main.py" />
         <option value="$PROJECT_DIR$/txt_S1Detail.py" />
-        <option value="$PROJECT_DIR$/draft.py" />
         <option value="$PROJECT_DIR$/compare" />
         <option value="$PROJECT_DIR$/../../../../已完成项目/ATPCO舱等解析/atpco解析舱等/test20170810_main.py" />
-        <option value="$PROJECT_DIR$/bag_json.py" />
         <option value="$PROJECT_DIR$/bag_db.py" />
+        <option value="$PROJECT_DIR$/draft.py" />
+        <option value="$PROJECT_DIR$/bag_json.py" />
         <option value="$PROJECT_DIR$/compare.py" />
       </list>
     </option>
@@ -243,25 +253,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="txt_S1Detail" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="行李数据优化工具" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/txt_S1Detail.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="test20170810_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -314,6 +305,25 @@
       <module name="行李数据优化工具" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="draft" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="行李数据优化工具" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/draft.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -469,18 +479,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.bag_db" />
-      <item index="1" class="java.lang.String" itemvalue="Python.txt_S1Detail" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test20170810_main" />
-      <item index="3" class="java.lang.String" itemvalue="Python.bag_json" />
-      <item index="4" class="java.lang.String" itemvalue="Python.compare" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test20170810_main" />
+      <item index="2" class="java.lang.String" itemvalue="Python.bag_json" />
+      <item index="3" class="java.lang.String" itemvalue="Python.compare" />
+      <item index="4" class="java.lang.String" itemvalue="Python.draft" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.compare" />
-        <item index="1" class="java.lang.String" itemvalue="Python.bag_json" />
-        <item index="2" class="java.lang.String" itemvalue="Python.bag_db" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test20170810_main" />
-        <item index="4" class="java.lang.String" itemvalue="Python.txt_S1Detail" />
+        <item index="1" class="java.lang.String" itemvalue="Python.bag_db" />
+        <item index="2" class="java.lang.String" itemvalue="Python.bag_json" />
+        <item index="3" class="java.lang.String" itemvalue="Python.draft" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test20170810_main" />
       </list>
     </recent_temporary>
   </component>
@@ -519,7 +529,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514173579325</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bagdata committed">
+      <created>1514195015880</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1514195015880</updated>
+    </task>
+    <task id="LOCAL-00005" summary="bagdata committed">
+      <created>1514201142731</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1514201142731</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -532,11 +556,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23987539" sideWeight="0.4969325" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15368639" sideWeight="0.4969325" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3426791" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36760125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -593,8 +617,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/compare.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="135" />
+          <line>91</line>
+          <option name="timeStamp" value="156" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -607,7 +631,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="141" />
+      <option name="time" value="162" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -660,7 +684,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReadFile.py" />
-    <entry file="file://$PROJECT_DIR$/draft.py" />
     <entry file="file://$PROJECT_DIR$/BagDataOptimization_main">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -701,41 +724,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../已完成项目/ATPCO舱等解析/atpco解析舱等/test20170810_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="26" />
           <folding>
             <element signature="e#125#505#0" expanded="false" />
-            <element signature="e#557#936#0" expanded="false" />
             <element signature="e#975#1280#0" expanded="false" />
             <element signature="e#1320#1406#0" expanded="false" />
             <element signature="e#1448#1664#0" expanded="false" />
             <element signature="e#1712#1861#0" expanded="false" />
+            <element signature="e#1908#2020#0" expanded="false" />
+            <element signature="e#2068#2151#0" expanded="false" />
+            <element signature="e#2197#2687#0" expanded="false" />
             <marker date="1502357078401" expanded="true" signature="305:328" ph="SELECT * FRO... cabin_bak" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/draft.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bag_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="87" column="83" lean-forward="true" selection-start-line="87" selection-start-column="83" selection-end-line="87" selection-end-column="83" />
+        <state relative-caret-position="67">
+          <caret line="81" column="65" lean-forward="true" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="65" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
             <element signature="e#117#312#0" expanded="false" />
             <element signature="e#353#576#0" expanded="false" />
-            <element signature="e#3248#3521#0" expanded="false" />
-            <element signature="e#3564#3770#0" expanded="false" />
-            <element signature="e#4097#4328#0" expanded="false" />
-            <element signature="e#4553#5247#0" expanded="false" />
-            <element signature="e#5362#6509#0" expanded="false" />
+            <element signature="e#3246#3519#0" expanded="false" />
+            <element signature="e#3562#3768#0" expanded="false" />
+            <element signature="e#4095#4326#0" expanded="false" />
+            <element signature="e#4551#5245#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bag_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="103" column="106" lean-forward="true" selection-start-line="102" selection-start-column="34" selection-end-line="103" selection-end-column="106" />
+        <state relative-caret-position="675">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding>
             <element signature="e#24#38#0" expanded="true" />
             <marker date="1514189845772" expanded="true" signature="2266:2309" ph="SELECT * FRO... fifc_fsd_baggage" />
@@ -746,12 +778,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/compare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        <state relative-caret-position="444">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
             <element signature="e#16#29#0" expanded="true" />
-            <marker date="1514194925261" expanded="true" signature="1201:1269" ph="SELECT * FRO... fifc_fsd_sub_baggage" />
-            <marker date="1514194925261" expanded="true" signature="2970:3013" ph="SELECT * FRO... fifc_fsd_baggage" />
+            <marker date="1514202232377" expanded="true" signature="1268:1336" ph="SELECT * FRO... fifc_fsd_sub_baggage" />
+            <marker date="1514202232377" expanded="true" signature="3123:3166" ph="SELECT * FRO... fifc_fsd_baggage" />
           </folding>
         </state>
       </provider>

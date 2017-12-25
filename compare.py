@@ -28,7 +28,7 @@ def  compare(data1,data2,errInfo):
 #     print(a['engineType'])
 #     r=proProcess(a)
 #     print(r)
-def checking(dict1,dict2):
+def checking(dict1,dict2):  ###dict1为数据库，dict2为文件
         #校验函数
         for key in dict2:
             # error_list.append(str(id))
@@ -39,14 +39,15 @@ def checking(dict1,dict2):
                 b=dict1["id"]
                 subbaggae = bag_db.get_subbag('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
                                'SELECT * FROM TCFlyIntFare.fifc_fsd_sub_baggage where relation_id=%s', dict1["id"])
-                c=1111
-                #subbag=fsd_bag_data[bags]
-                #cmp(subbag, dict2[id]["bags"], "bags错误")
+                #c=1111
+                dd=subbaggae[0]
+                subbaggae=dict1.setdefault(subbaggae[0]["id"],subbaggae[0])
+                compare(subbaggae["bags"], dict2["bags"], "bags错误")
             else:
                 if dict2[id]["sub_tag"]==0 and dict1[id]["sub_tag"]==0:
-                    cmp(dict1["bags"], dict2["bags"], "bags错误")
+                    compare(dict1["bags"], dict2["bags"], "bags错误")
                 else:
-                    cmp(dict1["sub_tag"], dict2["sub_tag"], "sub_tag错误")
+                    compare(dict1["sub_tag"], dict2["sub_tag"], "sub_tag错误")
             #对比其他字段
             # d=dict1["routing"]
             # e=dict2["routing"]
@@ -86,7 +87,7 @@ if __name__ == '__main__':
      result=checking(dict1, dict2)
      print ("ERROR LIST")
      # for iin range(0,len(error_list)):
-     #    print (error_list[i])
+     print (error_list) ####？？？？？？？？？？？为什么一条错误信息存入多次？？？？？？？？？？？？？？？？
     except Exception,E:  #异常信息有时是因为key与数据库中的字段值不匹配
          print Exception, ":", E#"111111111116666666666666666"
 
