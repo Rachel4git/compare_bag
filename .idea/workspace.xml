@@ -15,7 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/$test20170810_main.coverage" NAME="test20170810_main Coverage Results" MODIFIED="1513946490613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../../已完成项目/ATPCO舱等解析/atpco解析舱等" />
     <SUITE FILE_PATH="coverage/$txt_S1Detail.coverage" NAME="txt_S1Detail Coverage Results" MODIFIED="1513911123506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$bag_db.coverage" NAME="bag_db Coverage Results" MODIFIED="1514172881528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$bag_db.coverage" NAME="bag_db Coverage Results" MODIFIED="1514173554621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -55,8 +55,8 @@
       <file leaf-file-name="bag_json.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bag_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3193">
-              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="3458">
+              <caret line="184" column="48" lean-forward="true" selection-start-line="184" selection-start-column="48" selection-end-line="184" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -79,13 +79,13 @@
       <file leaf-file-name="bag_db.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bag_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="98" column="41" lean-forward="true" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+            <state relative-caret-position="89">
+              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
                 <element signature="e#24#38#0" expanded="true" />
                 <element signature="e#139#926#0" expanded="false" />
-                <marker date="1514172881514" expanded="true" signature="2200:2243" ph="SELECT * FRO... fifc_fsd_baggage" />
-                <marker date="1514172881514" expanded="true" signature="2516:2572" ph="SELECT * FRO... fifc_fsd_baggage" />
+                <marker date="1514173506880" expanded="true" signature="2259:2302" ph="SELECT * FRO... fifc_fsd_baggage" />
+                <marker date="1514173506880" expanded="true" signature="2569:2625" ph="SELECT * FRO... fifc_fsd_baggage" />
               </folding>
             </state>
           </provider>
@@ -441,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513954128049</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bagdata committed">
+      <created>1514172919561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1514172919561</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -505,8 +512,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/bag_db.py</url>
-          <line>105</line>
-          <option name="timeStamp" value="98" />
+          <line>99</line>
+          <option name="timeStamp" value="99" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -519,7 +526,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="99" />
+      <option name="time" value="100" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -531,8 +538,8 @@
           <folding>
             <element signature="e#24#38#0" expanded="true" />
             <element signature="e#139#926#0" expanded="false" />
-            <marker date="1514172881514" expanded="true" signature="2200:2243" ph="SELECT * FRO... fifc_fsd_baggage" />
-            <marker date="1514172881514" expanded="true" signature="2516:2572" ph="SELECT * FRO... fifc_fsd_baggage" />
+            <marker date="1514173506880" expanded="true" signature="2259:2302" ph="SELECT * FRO... fifc_fsd_baggage" />
+            <marker date="1514173506880" expanded="true" signature="2569:2625" ph="SELECT * FRO... fifc_fsd_baggage" />
           </folding>
         </state>
       </provider>
@@ -636,21 +643,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bag_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3193">
-          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        <state relative-caret-position="3458">
+          <caret line="184" column="48" lean-forward="true" selection-start-line="184" selection-start-column="48" selection-end-line="184" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bag_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="98" column="41" lean-forward="true" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+        <state relative-caret-position="89">
+          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
             <element signature="e#24#38#0" expanded="true" />
             <element signature="e#139#926#0" expanded="false" />
-            <marker date="1514172881514" expanded="true" signature="2200:2243" ph="SELECT * FRO... fifc_fsd_baggage" />
-            <marker date="1514172881514" expanded="true" signature="2516:2572" ph="SELECT * FRO... fifc_fsd_baggage" />
+            <marker date="1514173506880" expanded="true" signature="2259:2302" ph="SELECT * FRO... fifc_fsd_baggage" />
+            <marker date="1514173506880" expanded="true" signature="2569:2625" ph="SELECT * FRO... fifc_fsd_baggage" />
           </folding>
         </state>
       </provider>

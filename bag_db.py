@@ -81,7 +81,7 @@ def db2dict(info):
         dict = {}
         l = len(info)
         for i in range(0, l):
-            k=info[i]['master_routing']+"-"+info[i]['cabinclass'] #唯一索引
+            k=info[i]['routing'] + "|" + info[i]['connections'] + "|"+ info[i]['fillingairline'] + "|" + info[i]['cabinclass']  #唯一索引
             v=info[i]
             dict.setdefault(k, v)
         return dict
@@ -92,15 +92,15 @@ def db2dict(info):
 
 
 if __name__ == '__main__':
-    #  fsd_bag_data = get_baggage('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
-    #                                   'SELECT * FROM TCFlyIntFare.fifc_fsd_baggage')
-    #  print(fsd_bag_data[0])
-    # # a=fsd_bag_data[0]
-    # # fsd_bag_dic=db2dict(fsd_bag_data)
-    # # print(fsd_bag_dic)
+     fsd_bag_data = get_baggage('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
+                                       'SELECT * FROM TCFlyIntFare.fifc_fsd_baggage')
+     print(fsd_bag_data[0])
+    # a=fsd_bag_data[0]
+     fsd_bag_dic=db2dict(fsd_bag_data)
+     print(fsd_bag_dic)
 
 
-    fsd_subbag_data = get_subbag('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
-                               'SELECT * FROM TCFlyIntFare.fifc_fsd_baggage where id =%s ', 463)
-
-    print(fsd_subbag_data[0])
+    # fsd_subbag_data = get_subbag('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
+    #                            'SELECT * FROM TCFlyIntFare.fifc_fsd_baggage where id =%s ', 463)
+    #
+    # print(fsd_subbag_data[0])
