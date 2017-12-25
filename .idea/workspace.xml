@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce2f1975-4613-4b19-a9d2-ec04531b39f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compare.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bag_db.py" afterPath="$PROJECT_DIR$/bag_db.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compare" afterPath="$PROJECT_DIR$/compare" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/$test20170810_main.coverage" NAME="test20170810_main Coverage Results" MODIFIED="1513946490613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../../已完成项目/ATPCO舱等解析/atpco解析舱等" />
     <SUITE FILE_PATH="coverage/$txt_S1Detail.coverage" NAME="txt_S1Detail Coverage Results" MODIFIED="1513911123506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$bag_db.coverage" NAME="bag_db Coverage Results" MODIFIED="1513949975258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$bag_db.coverage" NAME="bag_db Coverage Results" MODIFIED="1514172881528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -57,18 +55,18 @@
       <file leaf-file-name="bag_json.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bag_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="35" />
+            <state relative-caret-position="-3193">
+              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compare.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="compare.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/compare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#16#29#0" expanded="true" />
                 <marker date="1513953871307" expanded="true" signature="272:311" ph="SELECT * FRO... fifc_fsd_bag" />
@@ -78,15 +76,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bag_db.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bag_db.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bag_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="103" column="100" lean-forward="true" selection-start-line="102" selection-start-column="3" selection-end-line="103" selection-end-column="100" />
+            <state relative-caret-position="279">
+              <caret line="98" column="41" lean-forward="true" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
               <folding>
                 <element signature="e#24#38#0" expanded="true" />
                 <element signature="e#139#926#0" expanded="false" />
-                <marker date="1513953327786" expanded="true" signature="2508:2561" ph="SELECT * FRO... fifc_fsd_bag" />
+                <marker date="1514172881514" expanded="true" signature="2200:2243" ph="SELECT * FRO... fifc_fsd_baggage" />
+                <marker date="1514172881514" expanded="true" signature="2516:2572" ph="SELECT * FRO... fifc_fsd_baggage" />
               </folding>
             </state>
           </provider>
@@ -122,8 +121,8 @@
         <option value="$PROJECT_DIR$/draft.py" />
         <option value="$PROJECT_DIR$/compare" />
         <option value="$PROJECT_DIR$/../../../../已完成项目/ATPCO舱等解析/atpco解析舱等/test20170810_main.py" />
-        <option value="$PROJECT_DIR$/bag_db.py" />
         <option value="$PROJECT_DIR$/compare.py" />
+        <option value="$PROJECT_DIR$/bag_db.py" />
       </list>
     </option>
   </component>
@@ -134,10 +133,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
-    <option name="y" value="-8" />
+    <option name="x" value="1361" />
+    <option name="y" value="4" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -435,10 +434,18 @@
       <option name="presentableId" value="Default" />
       <updated>1513494401812</updated>
     </task>
+    <task id="LOCAL-00001" summary="bagdata committed">
+      <created>1513954128049</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1513954128049</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="1361" y="4" width="1936" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -447,11 +454,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19106957" sideWeight="0.4969325" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19082378" sideWeight="0.4969325" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36967808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4316997" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -489,8 +496,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bagdata committed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bagdata committed" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bag_db.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -501,7 +519,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="97" />
+      <option name="time" value="99" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -513,7 +531,8 @@
           <folding>
             <element signature="e#24#38#0" expanded="true" />
             <element signature="e#139#926#0" expanded="false" />
-            <marker date="1513953327786" expanded="true" signature="2508:2561" ph="SELECT * FRO... fifc_fsd_bag" />
+            <marker date="1514172881514" expanded="true" signature="2200:2243" ph="SELECT * FRO... fifc_fsd_baggage" />
+            <marker date="1514172881514" expanded="true" signature="2516:2572" ph="SELECT * FRO... fifc_fsd_baggage" />
           </folding>
         </state>
       </provider>
@@ -585,11 +604,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bag_json.py">
+    <entry file="file://$PROJECT_DIR$/../../../../已完成项目/ATPCO舱等解析/atpco解析舱等/test20170810_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="46">
+          <caret line="135" column="40" lean-forward="true" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+          <folding>
+            <marker date="1502357078401" expanded="true" signature="305:328" ph="SELECT * FRO... cabin_bak" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -601,36 +622,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../已完成项目/ATPCO舱等解析/atpco解析舱等/test20170810_main.py">
+    <entry file="file://$PROJECT_DIR$/compare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="135" column="40" lean-forward="true" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+        <state relative-caret-position="285">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <marker date="1502357078401" expanded="true" signature="305:328" ph="SELECT * FRO... cabin_bak" />
+            <element signature="e#16#29#0" expanded="true" />
+            <marker date="1513953871307" expanded="true" signature="272:311" ph="SELECT * FRO... fifc_fsd_bag" />
+            <marker date="1513953871307" expanded="true" signature="1572:1625" ph="SELECT * FRO... fifc_fsd_bag" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bag_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3193">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bag_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="103" column="100" lean-forward="true" selection-start-line="102" selection-start-column="3" selection-end-line="103" selection-end-column="100" />
+        <state relative-caret-position="279">
+          <caret line="98" column="41" lean-forward="true" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
           <folding>
             <element signature="e#24#38#0" expanded="true" />
             <element signature="e#139#926#0" expanded="false" />
-            <marker date="1513953327786" expanded="true" signature="2508:2561" ph="SELECT * FRO... fifc_fsd_bag" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#29#0" expanded="true" />
-            <marker date="1513953871307" expanded="true" signature="272:311" ph="SELECT * FRO... fifc_fsd_bag" />
-            <marker date="1513953871307" expanded="true" signature="1572:1625" ph="SELECT * FRO... fifc_fsd_bag" />
+            <marker date="1514172881514" expanded="true" signature="2200:2243" ph="SELECT * FRO... fifc_fsd_baggage" />
+            <marker date="1514172881514" expanded="true" signature="2516:2572" ph="SELECT * FRO... fifc_fsd_baggage" />
           </folding>
         </state>
       </provider>

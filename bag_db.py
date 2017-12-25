@@ -44,7 +44,7 @@ def get_baggage(host,port,user,passwd,db,sql):
         print "Mysqldb error %d,%s" % ( e.args[0],e.args[1])
 
 
-def get_subbag(host,port,user,passwd,db,sql,relation_id,conditon):
+def get_subbag(host,port,user,passwd,db,sql,relation_id): #,conditon
     #连接附表，通过ID获取相关数据
     try:
         #建立数据库连接
@@ -60,7 +60,7 @@ def get_subbag(host,port,user,passwd,db,sql,relation_id,conditon):
         #获取cursor对象，用于SQL查询并返回结果
         cur = conn.cursor()
         #执行单条SQL语句，返回数据量
-        datas = cur.execute( sql, (relation_id,conditon))
+        datas = cur.execute( sql, [relation_id])
         #print(datas)
         #抓取数据
         info = cur.fetchmany(datas)
@@ -92,15 +92,15 @@ def db2dict(info):
 
 
 if __name__ == '__main__':
-    # fsd_bag_data = get_baggage('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
-    #                                  'SELECT * FROM TCFlyIntFare.fifc_fsd_bag')
-    # #print(fsd_bag_data[0])
-    # a=fsd_bag_data[0]
-    # fsd_bag_dic=db2dict(fsd_bag_data)
-    # print(fsd_bag_dic)
+    #  fsd_bag_data = get_baggage('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
+    #                                   'SELECT * FROM TCFlyIntFare.fifc_fsd_baggage')
+    #  print(fsd_bag_data[0])
+    # # a=fsd_bag_data[0]
+    # # fsd_bag_dic=db2dict(fsd_bag_data)
+    # # print(fsd_bag_dic)
 
 
-    fsd_bag_data = get_subbag('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
-                               'SELECT * FROM TCFlyIntFare.fifc_fsd_bag where "id"=%s ', 3619184,"")
+    fsd_subbag_data = get_subbag('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
+                               'SELECT * FROM TCFlyIntFare.fifc_fsd_baggage where id =%s ', 463)
 
-    print(fsd_bag_data)
+    print(fsd_subbag_data[0])
