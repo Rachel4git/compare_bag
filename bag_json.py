@@ -1,8 +1,10 @@
 # -*- coding:utf-8 -*-
 
 import os
+import datetime
 import time
 import json
+
 
 #读取 txt文件,返回list
 def txt_read(path):
@@ -57,37 +59,37 @@ def proProcess(json_data):
          operatingFlightNumber[i]=flightSegments[i]["operatingFlightNumber"]
          bag[i] = flightSegments[i]["bag"]
     #
-    routing=rout(l,departure,aircode,arrival)
-    aircodes=air_codes(l,aircode)
-    cabinclasses=cabin_class(l,isMainSegment,cabinclass)
+    routing=str(rout(l,departure,aircode,arrival))
+    aircodes=str(air_codes(l,aircode))
+    cabinclasses=str(cabin_class(l,isMainSegment,cabinclass))
     connections, depCtiy,arrCity= connect(l,orgiDestSeqID,segmentSeqID,departure,arrival)
     subtag=sub_tag(l,aircode,operatingFlightNumber)
-    operating=operate(l, operatingFlightNumber)
+    operating=str(operate(l, operatingFlightNumber))
     bags=""
     for i in range(0,l):
         if isMainSegment[i] == "1":
             if str(bags) != "":
                 bags = bags+"|"
-            bags = bags+bags_(bag[i])
+            bags = str(bags+bags_(bag[i]))
 
     #写入字典
     idb_S1_dict = {}
     #与数据源格式有关
-    idb_S1_dict.setdefault('fillingairline', json_data['ticketCarrier'])
-    idb_S1_dict.setdefault('pax_Type', "ADT")
-    idb_S1_dict.setdefault('createTime', json_data['createDate'])
-    idb_S1_dict.setdefault('source', json_data['engineType'])
-    idb_S1_dict.setdefault('tracerId', json_data['traceId'])
-
+    idb_S1_dict.setdefault('fillingairline', str(json_data['ticketCarrier']))
+    idb_S1_dict.setdefault('pax_type', "Adult")
+    idb_S1_dict.setdefault('create_time',  datetime.datetime.strptime(json_data['createDate'], '%Y-%m-%d %H:%M:%S') )
+    idb_S1_dict.setdefault('source', str(json_data['engineType']))
+    idb_S1_dict.setdefault('tracerid', str(json_data['traceId']))
+    #
     idb_S1_dict.setdefault('aircodes', aircodes)
-    idb_S1_dict.setdefault('arrCity',arrCity )
-    idb_S1_dict.setdefault('depCity',depCtiy )
+    idb_S1_dict.setdefault('arr_city',arrCity )
+    idb_S1_dict.setdefault('dep_city',depCtiy )
     idb_S1_dict.setdefault('detail_link', )
     idb_S1_dict.setdefault('routing', routing)  # depairport-marktingairlin-ariport
     idb_S1_dict.setdefault('connections', connections)
-    idb_S1_dict.setdefault('cabinclass',cabinclass )
+    idb_S1_dict.setdefault('cabinclass',cabinclasses )
     idb_S1_dict.setdefault('bags', bags)
-    idb_S1_dict.setdefault('sub_tag', sub_tag)  #？？？？？？？？？？？？？、、
+    idb_S1_dict.setdefault('sub_tag', subtag)  #？？？？？？？？？？？？？、、
     return idb_S1_dict
 
 #routing,
@@ -121,7 +123,7 @@ def cabin_class(L,isMainSegment,cabinclass):
     for i in range(0, L):
         # cabinclass
         if isMainSegment[i] == "1":
-            a=cabinclass[i]
+            #a=cabinclass[i]
             cabinclasses = cabinclasses + cabinclass[i]
     return cabinclasses
 
@@ -137,10 +139,10 @@ def operate(L,operatingFlightNumber):
 
 #sub_tag 是否有附表
 def sub_tag(L,aircode,operatingFlightNumber):
-    subtag="0"
+    subtag=0
     for i in range(0, L):
         if aircode[i] != operatingFlightNumber[i][0:1]:
-            subtag ="1"
+            subtag =1
     return subtag
 
 #bags
@@ -193,10 +195,10 @@ def connect(L,orgiDestSeqID,segmentSeqID,departureCityCode,arrivalCityCode):
                         connections ="X-S-S"
                         depCtiy = departureCityCode[0]
                         arrCity = arrivalCityCode[1]
-    return connections,depCtiy,arrCity
+    return connections,str(depCtiy),str(arrCity)
 
 if __name__ == '__main__':
     a = json_read(r'D:\MyConfiguration\hd48552\Desktop\S1-searchdetail (2).txt')
-    print(a['engineType'])
+    #print(a['engineType'])
     r=proProcess(a)
     print(r)

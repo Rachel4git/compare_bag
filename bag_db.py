@@ -75,14 +75,14 @@ def get_subbag(host,port,user,passwd,db,sql,relation_id): #,conditon
         print "Mysqldb error %d,%s" % ( e.args[0],e.args[1])
 
 
-def db2dict(info):
+def db2dict(infos):
     # 将数据库中数据写入字典
     try:
         dict = {}
-        l = len(info)
+        l = len(infos)
         for i in range(0, l):
-            k=info[i]['routing'] + "|" + info[i]['connections'] + "|"+ info[i]['fillingairline'] + "|" + info[i]['cabinclass']  #唯一索引
-            v=info[i]
+            k=infos[i]['routing'] + "|" + infos[i]['connections'] + "|"+ infos[i]['fillingairline'] + "|" + infos[i]['cabinclass']  #唯一索引
+            v=infos[i]
             dict.setdefault(k, v)
         return dict
     except Exception,E:
@@ -100,7 +100,7 @@ if __name__ == '__main__':
      print(fsd_bag_dic)
 
 
-    # fsd_subbag_data = get_subbag('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
-    #                            'SELECT * FROM TCFlyIntFare.fifc_fsd_baggage where id =%s ', 463)
-    #
-    # print(fsd_subbag_data[0])
+     fsd_subbag_data = get_subbag('10.100.157.78', 3500, 'TCFlyIntFare', 'MDiNkMR85fKgyRXI3iR', 'TCFlyIntFare',
+                               'SELECT * FROM TCFlyIntFare.fifc_fsd_sub_baggage where relation_id=%s', 588)
+
+     print(fsd_subbag_data[0])
